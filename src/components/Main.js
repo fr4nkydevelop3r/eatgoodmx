@@ -1,8 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
 
 class Main extends React.Component {
   render() {
@@ -12,6 +9,12 @@ class Main extends React.Component {
         onClick={() => {
           this.props.onCloseArticle()
         }}
+        onKeyPress={() => {
+          this.props.onCloseArticle()
+        }}
+        role="button"
+        tabIndex="0"
+        aria-label="Close"
       ></div>
     )
 
@@ -28,29 +31,26 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
+          <h2 className="major">Que ofrecemos?</h2>
+
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            Te construimos tu propia plataforma web para que puedas vender tu
+            comida por internet. Misma que podras dar a conocer a tus clientes
+            de forma facil y efectiva, ya que al tratarse de un link podras
+            promocionarte por cualquier medio: redes sociales, publicidad
+            impresa, tu sitio web, etc.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Es inaceptable que empresas como GrubHub, Seamless, UberEats o
+            Doordash esten cobrando comisiones de entre el 22% y el 35% por
+            procesamiento de ordenes. Al tener tu propia plataforma y no
+            depender de terceros estaras aumentando tu margen de ganancias.
+          </p>
+          <p>
+            En cuestion de horas tendras tu plataforma funcionando, lo unico que
+            necesitamos es tu menu actualizado, las zonas a donde haces
+            deliveries, tu horario de servicio y en caso de que tengas un logo.
+            Nuestro personal tecnico se encargara del resto.
           </p>
           {close}
         </article>
@@ -62,25 +62,22 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
-          <span className="image main">
+          <h2 className="major">Como funciona?</h2>
+          {/*<span className="image main">
             <img src={pic02} alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          </span> */}
+          <p>Tu cliente hace un pedido por internet y ocurre lo siguiente:</p>
+          <ul>
+            <li>
+              Recibes una notificacion de la nueva orden dentro de la plataforma
+            </li>
+            <li>
+              Recibes un PDF via email con los detalles de la orden y del
+              cliente, mismo que podras imprimir para tu personal de cocina
+            </li>
+            <li>Recibes un SMS con el nombre del cliente y su direccion</li>
+            <li>Todo esto en tiempo real</li>
+          </ul>
           {close}
         </article>
 
@@ -91,18 +88,12 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
+          <h2 className="major">Cuanto cuesta?</h2>
+
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            Pago unico de $500. Sin contratos ni ataduras legales. Hosting y
+            dominio incluido. Podras procesar tus ordenes con un fee minimo del
+            8%
           </p>
           {close}
         </article>
@@ -114,18 +105,23 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
+          <h2 className="major">TUS DATOS</h2>
+          <h3>Te llamaremos para agendar una DEMO en vivo</h3>
           <form method="post" action="#">
             <div className="field half first">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Nombre</label>
               <input type="text" name="name" id="name" />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
               <input type="text" name="email" id="email" />
             </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
+            <div className="field half first">
+              <label htmlFor="phone">Telefono</label>
+              <input type="text" name="phone" id="phone" />
+            </div>
+            <div className="field half">
+              <label htmlFor="message">Mensaje</label>
               <textarea name="message" id="message" rows="4"></textarea>
             </div>
             <ul className="actions">
@@ -137,7 +133,7 @@ class Main extends React.Component {
               </li>
             </ul>
           </form>
-          <ul className="icons">
+          {/* <ul className="icons">
             <li>
               <a
                 href="https://twitter.com/HuntaroSan"
@@ -164,7 +160,7 @@ class Main extends React.Component {
                 <span className="label">GitHub</span>
               </a>
             </li>
-          </ul>
+          </ul> */}
           {close}
         </article>
       </div>
