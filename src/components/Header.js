@@ -20,7 +20,7 @@ const Header = props => (
               props.onOpenArticle('intro')
             }}
           >
-            Que ofrecemos?
+            &iquest;Qu&eacute; ofrecemos?
           </button>
         </li>
         <li>
@@ -29,7 +29,7 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            Como funciona?
+            &iquest;C&oacute;mo funciona?
           </button>
         </li>
         <li>
@@ -38,7 +38,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            Cuanto cuesta?
+            &iquest;Cu&aacute;nto cuesta?
           </button>
         </li>
         <li>
