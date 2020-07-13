@@ -59,12 +59,12 @@ class Main extends React.Component {
     }
     if (this.state.phone === '') {
       this.setState({
-        phoneError: 'Por favor ingresa tu n&uacute;mero de tel&eacute;fono',
+        phoneError: 'Por favor ingresa tu numero de telefono',
       })
     }
     if (this.state.address === '') {
       this.setState({
-        addressError: 'Por favor ingresa tu direcci&oacute;n',
+        addressError: 'Por favor ingresa tu direccion',
       })
     }
     if (
