@@ -123,7 +123,7 @@ class Main extends React.Component {
             Le construimos una plataforma web a tu restaurante para que puedas
             vender tu comida por internet. Misma que podr&aacute;s compartir con
             tus clientes de forma f&aacute;cil y efectiva. Pon tu link donde
-            quieras: redes sociales, p&uuacute;blicidad impresa, sitio web, etc.
+            quieras: redes sociales, p&uacute;blicidad impresa, sitio web, etc.
             Aprovecha la magia de internet y aumenta tus ventas.
           </p>
           <p>
