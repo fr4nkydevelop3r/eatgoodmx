@@ -59,12 +59,12 @@ class Main extends React.Component {
     }
     if (this.state.phone === '') {
       this.setState({
-        phoneError: 'Por favor ingresa tu numero de telefono',
+        phoneError: 'Por favor ingresa tu n&uacute;mero de tel&eacute;fono',
       })
     }
     if (this.state.address === '') {
       this.setState({
-        addressError: 'Por favor ingresa tu direccion',
+        addressError: 'Por favor ingresa tu direcci&oacute;n',
       })
     }
     if (
@@ -123,14 +123,15 @@ class Main extends React.Component {
             Le construimos una plataforma web a tu restaurante para que puedas
             vender tu comida por internet. Misma que podr&aacute;s compartir con
             tus clientes de forma f&aacute;cil y efectiva. Pon tu link donde
-            quieras: redes sociales, publicidad impresa, sitio web, etc.
+            quieras: redes sociales, p&uuacute;blicidad impresa, sitio web, etc.
             Aprovecha la magia de internet y aumenta tus ventas.
           </p>
           <p>
             Es inaceptable que empresas como GrubHub, Seamless, UberEats o
             Doordash est&eacute;n cobrando comisiones de entre el 22% y el 35%
             por procesamiento de ordenes. Al tener tu propia plataforma y no
-            depender de terceros estaras aumentando tu margen de ganancias.
+            depender de terceros estar&aacute;s aumentando tu margen de
+            ganancias.
           </p>
           <p>
             En cuesti&oacute;n de horas tendr&aacute;s tu plataforma
