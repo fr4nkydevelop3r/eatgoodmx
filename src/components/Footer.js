@@ -6,7 +6,7 @@ const Footer = props => (
     <p className="copyright">
       &copy; Todos los derechos reservados. Built with
       <span role="img" aria-label="heart">
-        ️ ️❤️
+        ❤️
       </span>{' '}
       by <a href="https://frankandrade.dev/">fr4nky</a>
     </p>
