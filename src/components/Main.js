@@ -1,7 +1,37 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 class Main extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: '',
+      email: '',
+      phone: '',
+      address: '',
+    }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleChange(event) {
+    this.setState({ [event.target.name]: event.target.value })
+  }
+
+  handleSubmit = async e => {
+    e.preventDefault()
+    const result = await addToMailchimp(this.state.email, {
+      name: this.state.name,
+      phone: this.state.phone,
+      address: this.state.address,
+    })
+    console.log(result)
+    // I recommend setting `result` to React state
+    // but you can do whatever you want
+  }
+
   render() {
     let close = (
       <div
@@ -107,29 +137,49 @@ class Main extends React.Component {
         >
           <h2 className="major">TUS DATOS</h2>
           <h3>Te llamaremos para agendar una DEMO en vivo</h3>
-          <form method="post" action="#">
+          <form onSubmit={this.handleSubmit}>
             <div className="field half first">
               <label htmlFor="name">Nombre</label>
-              <input type="text" name="name" id="name" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
             </div>
             <div className="field half first">
               <label htmlFor="phone">Telefono</label>
-              <input type="text" name="phone" id="phone" />
+              <input
+                type="text"
+                name="phone"
+                value={this.state.phone}
+                onChange={this.handleChange}
+              />
             </div>
             <div className="field half">
-              <label htmlFor="message">Mensaje</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <label htmlFor="address">Direccion</label>
+              <input
+                name="address"
+                id="address"
+                value={this.state.address}
+                onChange={this.handleChange}
+                type="text"
+              ></input>
             </div>
             <ul className="actions">
               <li>
                 <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
               </li>
             </ul>
           </form>

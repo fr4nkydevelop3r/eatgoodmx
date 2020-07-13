@@ -19,6 +19,14 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://taconchile.us10.list-manage.com/subscribe/post?u=4f2a6a9c19a4c7a2cb9cb2e2f&amp;id=5d0a753a7b', // string; add your MC list endpoint here; see instructions below
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
     'gatsby-plugin-sass',
   ],
 }
