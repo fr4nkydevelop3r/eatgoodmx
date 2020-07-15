@@ -157,6 +157,10 @@ class Main extends React.Component {
           <p>Tu cliente hace un pedido por internet y ocurre lo siguiente:</p>
           <ul>
             <li>
+              Recibes una llamada telefonica inform&aacute;ndote que
+              lleg&oacute; una nueva orden
+            </li>
+            <li>
               Recibes una notificaci&oacute;n de la nueva orden dentro de la
               plataforma
             </li>
