@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
+import Video from './Video'
 
 class Main extends React.Component {
   constructor(props) {
@@ -118,7 +119,10 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">&iquest;Qu&eacute; ofrecemos?</h2>
-
+          <Video
+            videoSrcURL="https://www.youtube.com/embed/Q35dxIf-TbA"
+            videoTitle="Funcionamiento de Eatgoodmx"
+          />
           <p>
             Le construimos una plataforma web a tu restaurante para que puedas
             vender tu comida por internet. Misma que podr&aacute;s compartir con
