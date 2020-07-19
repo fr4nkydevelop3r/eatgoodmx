@@ -188,8 +188,7 @@ class Main extends React.Component {
 
           <p>
             Pago &uacute;nico de $350. Sin contratos ni ataduras legales.
-            Hosting y dominio incluido. Podr&aacute;s procesar tus ordenes con
-            un fee m&iacute;nimo del 5%
+            Podr&aacute;s procesar tus ordenes con un fee m&iacute;nimo del 5%
           </p>
           {close}
         </article>
