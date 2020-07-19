@@ -187,9 +187,9 @@ class Main extends React.Component {
           <h2 className="major">&iquest;Cu&aacute;nto cuesta?</h2>
 
           <p>
-            Pago &uacute;nico de $500. Sin contratos ni ataduras legales.
+            Pago &uacute;nico de $350. Sin contratos ni ataduras legales.
             Hosting y dominio incluido. Podr&aacute;s procesar tus ordenes con
-            un fee m&iacute;nimo del 8%
+            un fee m&iacute;nimo del 5%
           </p>
           {close}
         </article>
