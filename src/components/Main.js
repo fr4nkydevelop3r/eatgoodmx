@@ -190,10 +190,7 @@ class Main extends React.Component {
         >
           <h2 className="major">&iquest;Cu&aacute;nto cuesta?</h2>
 
-          <p>
-            Pago &uacute;nico de $350. Sin contratos ni ataduras legales.
-            Podr&aacute;s procesar tus ordenes con un fee m&iacute;nimo del 5%
-          </p>
+          <p>Pago &uacute;nico de $350. Sin contratos ni ataduras legales.</p>
           {close}
         </article>
 
